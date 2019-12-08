@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Comission</title>
+</head>
+<body>
+<script src="calculate/calc.js"> </script>
+<fieldset>
+        <legend>Traded</legend>
+        <input id="traded" type="text" placeholder="traded"
+                oninput="getPrice(this.id,this.value)">
+        </fieldset>
+        
+        <fieldset>
+        <legend>Price</legend>
+        <input id="price" type="text" placeholder="price" 
+        data-validetta="required, price" required=""
+                oninput="getPrice(this.id,this.value)">   
+        </fieldset>
+        
+
+        <fieldset>
+        <legend>Comission percentage</legend>
+        <input id="comission" type="text" required="" placeholder="%" value="5"
+                 oninput="getPrice(this.id,this.value)">
+        </fieldset>
+        <br>
+        <fieldset>
+        <legend></legend>
+        <input id="total" type="text" required="" placeholder="result" 
+                oninput="getPrice(this.id,this.value)"> > 
+         
+        <input id="netincome" type="text" required="" placeholder="net income"
+                oninput="getPrice(this.id,this.value)"> >
+        <input id="percent" type="text" required="" placeholder= "percent"
+                 oninput="getPrice(this.id,this.value)">% of total winning
+        </fieldset>
+</body>
+</html>
+
+
